@@ -1,0 +1,22 @@
+pre{
+    padding:0px 0px 15px 0px;
+}
+pre.prettyprint{
+    margin-bottom: 10px;
+}
+
+pre.prettyprint div.span12{
+    width:900px;
+}
+
+.source li{
+    float: left;
+}
+
+.source ol{
+    margin: 0 0 9px 30px;
+}
+
+div.pre-scrollable{
+    max-height: 200px;
+}
