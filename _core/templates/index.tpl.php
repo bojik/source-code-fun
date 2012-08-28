@@ -18,8 +18,8 @@ $menu = array (
 <table class="table">
 <?php foreach ($rows as $row):?>
     <tr>
-        <td style="border-right: 1px solid #DDD;" width="15%"><b><?php echo htmlspecialchars($row['author'])?></b><br><?php echo Source_Utils::formatDate($row['creation_date'])?></td>
         <td>
+            <p><b><?php echo htmlspecialchars($row['author'])?></b> <?php echo Source_Utils::formatDate($row['creation_date'])?></p>
             <div class="source pre-scrollable"><pre><?php echo Source_Highlight::getHtml($row['code'], $row['lang'])?></pre></div>
             <p><?php echo Source_Utils::escapeText($row['code_comment'])?></p>
             <p style="text-align: right;"><a href="/code/<?php echo $row['code_id']?>#new-comment">Оставить комментарий</a>&nbsp; - &nbsp;<a href="/code/<?php echo $row['code_id']?>#comments">Комментарии: <?php echo $row['comment_count']?></a></p>
